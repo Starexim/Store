@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ultra Booster – Male Enhancement & Stamina Booster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    .hero-section {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #8B0000 0%, #6A0000 30%, #111 80%);
+      color: white;
+      background-attachment: fixed;
+    }
+
+    .hero-section h1 {
+      font-size: 48px;
+      font-weight: bold;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero-section p {
+      font-size: 20px;
+      margin-top: 15px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .product-image {
+      max-width: 200px;
+      margin: 20px auto;
+      display: block;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.6));
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      padding: 15px 35px;
+      font-size: 18px;
+      font-weight: 600;
+      background: linear-gradient(to right, #FF0000 0%, #CC0000 50%, #8B0000 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(139, 0, 0, 0.6);
+    }
+
+    .cta-button:hover {
+      background: linear-gradient(to right, #CC0000 0%, #8B0000 50%, #600000 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(139, 0, 0, 0.8);
+    }
+
+    .features-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #111 0%, #0a0a0a 100%);
+    }
+
+    .feature {
+      margin-bottom: 30px;
+      padding: 25px 15px;
+      background: linear-gradient(to bottom, rgba(28, 28, 28, 0.9) 0%, rgba(34, 34, 34, 0.95) 100%);
+      border-left: 3px solid #8B0000;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h4 {
+      color: #ff4d4d;
+      margin-bottom: 15px;
+    }
+
+    .order-form-section {
+      background: linear-gradient(to bottom, #1a1a1a 0%, #111 100%);
+      padding: 60px 20px;
+      border-top: 1px solid #8B0000;
+      border-bottom: 1px solid #8B0000;
+    }
+
+    .form-label {
+      color: #ccc;
+      font-weight: 500;
+    }
+
+    .form-control {
+      background-color: #222;
+      border: 1px solid #444;
+      color: white;
+    }
+
+    .form-control:focus {
+      background-color: #222;
+      border-color: #ff4d4d;
+      box-shadow: 0 0 0 0.25rem rgba(255, 77, 77, 0.25);
+      color: white;
+    }
+
+    .phone-input-group {
+      display: flex;
+    }
+
+    .country-code {
+      padding: 8px 12px;
+      background: linear-gradient(to bottom, #333 0%, #222 100%);
+      border: 1px solid #444;
+      border-right: none;
+      color: #ccc;
+    }
+
+    .phone-number {
+      border-radius: 0 4px 4px 0 !important;
+    }
+
+    .testimonials {
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #0a0a0a 0%, #111 100%);
+    }
+
+    .testimonial-card {
+      background: linear-gradient(to right, rgba(34, 34, 34, 0.9) 0%, rgba(28, 28, 28, 0.9) 100%);
+      border-radius: 8px;
+      padding: 25px;
+      margin: 0 auto;
+      border-left: 4px solid #8B0000;
+      max-width: 600px;
+    }
+
+    .footer {
+      background: linear-gradient(to bottom, #000 0%, #111 100%);
+      color: #888;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    .hot-badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: linear-gradient(45deg, #FF0000 0%, #8B0000 100%);
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 2px 10px rgba(255,0,0,0.5);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    /* Testimonial Carousel - No Arrows */
+    .testimonial-carousel {
+      position: relative;
+      margin: 0 auto;
+      max-width: 650px;
+    }
+    
+    .carousel-indicators {
+      bottom: -40px;
+    }
+    
+    .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #444;
+      border: none;
+      margin: 0 5px;
+      transition: all 0.3s ease;
+    }
+    
+    .carousel-indicators button.active {
+      background-color: #8B0000;
+      transform: scale(1.2);
+    }
+  </style>
+    <!-- Add these -->
+  <meta name="description" content="Ultra Booster - Ayurvedic male enhancement formula for improved stamina, stronger erections and enhanced sexual performance. 100% natural ingredients.">
+  <link rel="icon" href="favicon.ico">
+  <!-- Structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Ultra Booster",
+      "description": "Ayurvedic Sexual Performance Enhancer",
+      "brand": {
+        "@type": "Brand",
+        "name": "Ultra Booster"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="position-relative" style="display: inline-block;">
+      <h1>Ultra Booster</h1>
+      <div class="hot-badge">HOT DEAL</div>
+    </div>
+    <p>Ayurvedic Sexual Performance Enhancer - Dramatically Improve Confidence & Stamina!</p>
+    <img src="https://via.placeholder.com/200x300?text=Ultra+Booster+Product" alt="Ultra Booster Product" class="product-image">
+    <a href="#orderForm" class="btn cta-button">ORDER NOW</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section container">
+    <h2 class="mb-5" style="color: #ff4d4d;">Ultra Booster Benefits</h2>
+    <div class="row">
+      <div class="col-md-4 feature">
+        <h4>Last Longer</h4>
+        <p>Enables continuous performance for up to 3 hours.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <h4>Stronger Erections</h4>
+        <p>Improves blood flow for harder, more reliable erections.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <h4>Natural & Safe</h4>
+        <p>100% herbal formula with no known side effects.</p>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4 feature">
+        <h4>Boost Libido</h4>
+        <p>Naturally enhances sexual desire and performance.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <h4>Fast Acting</h4>
+        <p>Begins working in as little as 30 minutes.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <h4>Increased Energy</h4>
+        <p>Reduces fatigue and improves stamina.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel (No Arrows) -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="text-center mb-5" style="color: #ff4d4d;">Customer Testimonials</h2>
+      <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-card">
+              <p>"Ultra Booster completely transformed my sex life. I can finally satisfy my partner completely. The results were noticeable within the first week."</p>
+              <p><strong>- Rahul, 32</strong></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <p>"Worked on the first try! No side effects and works naturally with my body. I've tried many products but this one actually delivers."</p>
+              <p><strong>- Vijay, 45</strong></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <p>"I've been using this for 2 years and results are consistently amazing. My confidence in the bedroom has never been higher."</p>
+              <p><strong>- Amit, 31</strong></p>
+            </div>
+          </div> 
+		  <div class="carousel-item">
+            <div class="testimonial-card">
+              <p>"I've been using this for 2 years and results are consistently amazing. My confidence in the bedroom has never been higher."</p>
+              <p><strong>- Amit, 32</strong></p>
+            </div>
+          </div>
+		  <div class="carousel-item">
+            <div class="testimonial-card">
+              <p>"I've been using this for 2 years and results are consistently amazing. My confidence in the bedroom has never been higher."</p>
+              <p><strong>- Amit, 34</strong></p>
+            </div>
+          </div>
+		  <div class="carousel-item">
+            <div class="testimonial-card">
+              <p>"I've been using this for 2 years and results are consistently amazing. My confidence in the bedroom has never been higher."</p>
+              <p><strong>- Amit, 38</strong></p>
+            </div>
+          </div>
+        </div>
+        <!-- Only indicator dots -->
+       
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+		  <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+		  <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+		  <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+		  <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4"></button>
+		  <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="5"></button>
+		</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section class="order-form-section text-center" id="orderForm">
+    <div class="container">
+      <h2 style="color: #ff4d4d;">Limited Time Offer</h2>
+      <p class="mb-4">Order today and get 50% discount!</p>
+      <form class="mx-auto mt-4" style="max-width: 400px;" action="https://your-order-api.com/api.php" method="POST">
+        <div class="mb-3 text-start">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3 text-start">
+          <label for="phone" class="form-label">Phone Number</label>
+          <div class="phone-input-group">
+            <span class="country-code">+91</span>
+            <input type="tel" name="phone" class="form-control phone-number" placeholder="9876543210" pattern="[0-9]{10}" minlength="10" maxlength="10" required>
+          </div>
+        </div>
+        <div class="mb-3 text-start">
+          <label for="address" class="form-label">Address (Optional)</label>
+          <textarea name="address" class="form-control" rows="2"></textarea>
+        </div>
+        <button type="submit" class="btn cta-button w-100">CONFIRM ORDER</button>
+      </form>
+      <p class="mt-3"><small>Your information is secure and will only be used for order processing.</small></p>
+    </div>
+  </section>
+	<!-- Add this before the footer -->
+	<section class="py-5 bg-dark">
+	  <div class="container">
+		<h3 class="text-center mb-4">Frequently Asked Questions</h3>
+		<div class="accordion" id="faqAccordion">
+		  <!-- FAQ items here -->
+		</div>
+	  </div>
+	</section>
+
+	<!-- Money back guarantee -->
+	<div class="py-4 text-center" style="background: #8B0000;">
+	  <div class="container">
+		<h4 class="text-white">100% Satisfaction Guarantee</h4>
+		<p class="text-white mb-0">If you're not completely satisfied, we'll refund your money.</p>
+	  </div>
+	</div>
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Ultra Booster | All Rights Reserved. 100% Privacy Guaranteed.</p>
+    <p class="mt-2"><small>This product is for adults 18 years or older. Consult your doctor if you have any health concerns.</small></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Phone number validation
+   document.querySelector('form').addEventListener('submit', function(e) {
+	  e.preventDefault();
+	  // Show loading state
+	  const btn = this.querySelector('button[type="submit"]');
+	  btn.innerHTML = 'Processing...';
+	  btn.disabled = true;
+	  
+	  // Simulate form submission
+	  setTimeout(() => {
+		alert('Thank you for your order! We will contact you shortly.');
+		btn.innerHTML = 'ORDER SENT!';
+	  }, 1500);
+	});
+
+    // Initialize carousel with autoplay
+    document.addEventListener('DOMContentLoaded', function() {
+      const myCarousel = new bootstrap.Carousel(document.getElementById('testimonialCarousel'), {
+        interval: 2000, // Rotate every 5 seconds
+        wrap: true, // Infinite loop
+        pause: false // Don't pause on hover
+      });
+
+      // Animate features on scroll
+      const features = document.querySelectorAll('.feature');
+      
+      const animateOnScroll = () => {
+        features.forEach(feature => {
+          const featurePosition = feature.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          
+          if(featurePosition < screenPosition) {
+            feature.style.opacity = '1';
+            feature.style.transform = 'translateY(0)';
+          }
+        });
+      };
+      
+      // Set initial state
+      features.forEach(feature => {
+        feature.style.opacity = '0';
+        feature.style.transform = 'translateY(20px)';
+        feature.style.transition = 'all 0.6s ease';
+      });
+      
+      window.addEventListener('scroll', animateOnScroll);
+      animateOnScroll(); // Trigger on load
+    });
+	const swiper = new Swiper('.testimonial-slider', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      // When window width is >= 768px (desktop)
+      768: {
+        slidesPerView: 3,
+      }
+    }
+  });
+  </script>
+</body>
+</html>
